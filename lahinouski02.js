@@ -24,13 +24,11 @@ function selectFromInterval(numbersArray, indexStart, indexEnd) {
     throw new Error('Not an array with numbers');
   } else if (invalidStartIndex || invalidEndIndex) {
     throw new Error('Range indexes are not numbers');
-  } else {
-    if (indexStart > indexEnd) {
-      [indexStart, indexEnd] = [indexEnd, indexStart];
-    }
-
-    return numbersArray.slice(indexStart - 1, indexEnd);
+  } else if (indexStart > indexEnd) {
+    [indexStart, indexEnd] = [indexEnd, indexStart];
   }
+
+  return numbersArray.slice(indexStart - 1, indexEnd);
 }
 
 function allNumbers(arrayToCheck) {
