@@ -61,6 +61,7 @@ const myIterable = {
         if (this.currentIndex <= this.lastIndex) {
           return { done: false, value: this.currentIndex++ };
         }
+        
         return { done: true };
       }
     };
