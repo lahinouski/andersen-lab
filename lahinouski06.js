@@ -26,9 +26,9 @@ class Car {
     this.#maxSpeedCount = this.invalidSpeedCount(maxSpeedCount) ? null : maxSpeedCount;
     this.#maxFuelVolume = this.invalidMaxFuel(maxFuelVolume) ? null : maxFuelVolume;
     this.#fuelConsumption = this.invalidCount(fuelConsumption) ? null : fuelConsumption;
-    this.#currentFuelVolume = this.invalidCount(currentFuelVolume) ? 0 : currentFuelVolume;;
-    this.#isStarted = this.invalidIsStarted(isStarted) ? false : isStarted;;
-    this.#mileage = this.invalidCount(mileage) ? 0 : mileage;;
+    this.#currentFuelVolume = this.invalidCount(currentFuelVolume) ? 0 : currentFuelVolume;
+    this.#isStarted = this.invalidIsStarted(isStarted) ? false : isStarted;
+    this.#mileage = this.invalidCount(mileage) ? 0 : mileage;
   }
 
   invalidName(stringToCheck) {
